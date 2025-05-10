@@ -129,7 +129,7 @@ export default function Index() {
             ></iframe>
           </div>
 
-          <div>
+          <div className="flex flex-row flex-wrap gap-5g">
             <SocialLink icon="youtube" description="Subscribe on Youtube" />
             <SocialLink icon="instagram" description="Follow on Instagram" />
             <SocialLink icon="patreon" description="Become a Patron" />
