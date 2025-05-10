@@ -2,8 +2,9 @@ import type { MetaFunction } from "@remix-run/node";
 
 import AndrewAnime from "../images/andrew-anime.png";
 import HoratioAnime from "../images/horatio-anime.png";
-import BgwFooter from "./components/BgwFooter";
-import BgwHeader from "./components/BgwHeader";
+import { BgwFooter } from "./components/BgwFooter";
+import { BgwHeader } from "./components/BgwHeader";
+import { SocialLink } from "./components/SocialLink";
 import { useYoutubeVideo } from "./hooks/useYoutubeVideo";
 
 const BGW_YT_VIDEO_ID = "k5ko_aVG6dM";
@@ -103,7 +104,7 @@ export default function Index() {
     <>
       <BgwHeader />
 
-      <main className="flex h-screen items-center justify-center">
+      <main className="flex items-center justify-center">
         <div className="flex flex-col items-center gap-16 w-7/12 pt-[250px]">
           {/* pb-[56.25%] h-0 can use to force 16/9 */}
           <div className="relative w-full aspect-video">
@@ -123,6 +124,20 @@ export default function Index() {
               allow="fullscreen"
             ></iframe>
           </div>
+
+          <div>
+            <SocialLink icon="youtube" description="Subscribe on Youtube" />
+            <SocialLink icon="instagram" description="Follow on Instagram" />
+            <SocialLink icon="patreon" description="Become a Patron" />
+            <SocialLink icon="tok-tok" description="Watch on Tik Tok" />
+            <SocialLink icon="spotify" description="Listen on Spotify" />
+            <SocialLink
+              icon="podcast"
+              description="Listen on your podcast app"
+            />
+          </div>
+
+          <div>host profiles</div>
         </div>
       </main>
 

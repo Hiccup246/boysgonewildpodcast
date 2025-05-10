@@ -1,6 +1,6 @@
 import BoysGoneWildLogo from "../../images/bgw-header.png";
 
-export default function BgwHeader() {
+export const BgwHeader = () => {
   return (
     <header className="flex flex-col items-center gap-9">
       <div className="w-9/12">
@@ -8,4 +8,4 @@ export default function BgwHeader() {
       </div>
     </header>
   );
-}
+};
