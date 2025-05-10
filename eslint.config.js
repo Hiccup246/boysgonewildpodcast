@@ -3,7 +3,6 @@ import { globalIgnores } from "eslint/config";
 import eslintConfigPrettier from "eslint-config-prettier/flat";
 import reactPlugin from "eslint-plugin-react";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
-import tailwind from "eslint-plugin-tailwindcss";
 import globals from "globals";
 import tseslint from "typescript-eslint";
 
@@ -24,7 +23,6 @@ export default [
       "simple-import-sort/exports": "error",
     },
   },
-  ...tailwind.configs["flat/recommended"],
   eslintConfigPrettier,
   globalIgnores(["node_modules", "build"]),
 ];

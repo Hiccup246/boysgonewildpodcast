@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
-import BgwHeader from "./components/BgwHeader";
+
 import BgwFooter from "./components/BgwFooter";
+import BgwHeader from "./components/BgwHeader";
 
 export const meta: MetaFunction = () => {
   return [
