@@ -1,5 +1,4 @@
 import type { MetaFunction } from "@remix-run/node";
-import { Outlet } from "@remix-run/react";
 import BgwHeader from "./components/BgwHeader";
 import BgwFooter from "./components/BgwFooter";
 
@@ -95,9 +94,7 @@ export default function Index() {
       <BgwHeader />
 
       <main className="flex h-screen items-center justify-center">
-        <div className="flex flex-col items-center gap-16 p-5">
-          
-        </div>
+        <div className="flex flex-col items-center gap-16 p-5"></div>
       </main>
 
       <BgwFooter />
