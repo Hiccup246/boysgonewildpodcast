@@ -1,4 +1,5 @@
 import jseslint from "@eslint/js";
+import { globalIgnores } from "eslint/config";
 import eslintConfigPrettier from "eslint-config-prettier/flat";
 import reactPlugin from "eslint-plugin-react";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
@@ -25,4 +26,5 @@ export default [
   },
   ...tailwind.configs["flat/recommended"],
   eslintConfigPrettier,
+  globalIgnores(["node_modules", "build"]),
 ];
