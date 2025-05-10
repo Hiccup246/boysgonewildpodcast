@@ -11,10 +11,10 @@ jobs:
       - name: Test using Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18"
+          node-version: "21.6.0"
 
       - name: Install pnpm
-        run: npm install -g pnpm@8.6.1
+        run: npm install -g pnpm@10.7.1
 
       - name: Install Dependancies
         run: pnpm install
