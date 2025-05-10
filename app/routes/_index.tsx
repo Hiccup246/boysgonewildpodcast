@@ -103,16 +103,15 @@ export default function Index() {
 
       <main className="flex h-screen items-center justify-center">
         <div className="flex flex-col items-center gap-16 w-9/12">
-        
-        {/* pb-[56.25%] h-0 can use to force 16/9 */}
-        <div className="relative w-full aspect-video">  
-          <iframe id="bgw-player"
-            src={bgwYtVideoUrl}
-            className="absolute top-0 left-0 w-full h-full"
-            allow="fullscreen"
-          ></iframe>
-        </div>
-        
+          {/* pb-[56.25%] h-0 can use to force 16/9 */}
+          <div className="relative w-full aspect-video">
+            <iframe
+              id="bgw-player"
+              src={bgwYtVideoUrl}
+              className="absolute top-0 left-0 w-full h-full"
+              allow="fullscreen"
+            ></iframe>
+          </div>
         </div>
       </main>
 
