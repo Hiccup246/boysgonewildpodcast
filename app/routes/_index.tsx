@@ -1,5 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 
+import AndrewAnime from "../images/andrew-anime.png";
+import HoratioAnime from "../images/horatio-anime.png";
 import BgwFooter from "./components/BgwFooter";
 import BgwHeader from "./components/BgwHeader";
 import { useYoutubeVideo } from "./hooks/useYoutubeVideo";
@@ -102,9 +104,18 @@ export default function Index() {
       <BgwHeader />
 
       <main className="flex h-screen items-center justify-center">
-        <div className="flex flex-col items-center gap-16 w-9/12">
+        <div className="flex flex-col items-center gap-16 w-7/12 pt-[250px]">
           {/* pb-[56.25%] h-0 can use to force 16/9 */}
           <div className="relative w-full aspect-video">
+            <img
+              src={HoratioAnime}
+              className="absolute top-[-260px] left-0 h-[300px]"
+            />
+            <img
+              src={AndrewAnime}
+              className="absolute top-[-260px] right-0 h-[300px]"
+            />
+
             <iframe
               id="bgw-player"
               src={bgwYtVideoUrl}
