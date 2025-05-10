@@ -2,6 +2,9 @@ import type { MetaFunction } from "@remix-run/node";
 
 import BgwFooter from "./components/BgwFooter";
 import BgwHeader from "./components/BgwHeader";
+import { useYoutubeVideo } from "./hooks/useYoutubeVideo";
+
+const BGW_YT_VIDEO_ID = "k5ko_aVG6dM";
 
 export const meta: MetaFunction = () => {
   return [
@@ -90,12 +93,27 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
+  const { player } = useYoutubeVideo(BGW_YT_VIDEO_ID, "bgw-player");
+
+  const bgwYtVideoUrl = `https://www.youtube.com/embed/${BGW_YT_VIDEO_ID}?enablejsapi=1`;
+
   return (
     <>
       <BgwHeader />
 
       <main className="flex h-screen items-center justify-center">
-        <div className="flex flex-col items-center gap-16 p-5"></div>
+        <div className="flex flex-col items-center gap-16 w-9/12">
+        
+        {/* pb-[56.25%] h-0 can use to force 16/9 */}
+        <div className="relative w-full aspect-video">  
+          <iframe id="bgw-player"
+            src={bgwYtVideoUrl}
+            className="absolute top-0 left-0 w-full h-full"
+            allow="fullscreen"
+          ></iframe>
+        </div>
+        
+        </div>
       </main>
 
       <BgwFooter />
