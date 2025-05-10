@@ -13,7 +13,7 @@ export const useYoutubeVideo = (
     const firstScriptTag = document.getElementsByTagName("script")[0];
     firstScriptTag?.parentNode?.insertBefore(tag, firstScriptTag);
 
-    (window as any).onYouTubeIframeAPIReady = function () {
+    window.onYouTubeIframeAPIReady = function () {
       setPlayer(
         new YT.Player(elementId, {
           videoId: videoId,
