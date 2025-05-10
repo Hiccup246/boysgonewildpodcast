@@ -1,0 +1,30 @@
+name: Style Check
+on:
+  push:
+    branches: [main]
+jobs:
+  style_check:
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Test using Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      - name: Install pnpm
+        run: npm install -g pnpm@8.6.1
+
+      - name: Install Dependancies
+        run: pnpm install
+
+      - name: Build Project (includes type check)
+        run: pnpm run build
+
+      - name: Lint Project
+        run: pnpm run lint
+
+      - name: Run Prettier
+        if: ${{ success() }}
+        run: pnpm run prettier
