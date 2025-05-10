@@ -1,18 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
-}
+@import "tailwindcss";
 
 @theme {
-  --pink: #fa73c8;
-  --purple: #ff9cff;
-  --neon-blue: #11f2ee;
+  --color-bgw-pink: #fa73c8;
+  --color-bgw-purple: #ff9cff;
+  --color-bgw-neon-blue: #11f2ee;
 }
