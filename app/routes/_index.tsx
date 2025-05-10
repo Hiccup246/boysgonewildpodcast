@@ -1,9 +1,13 @@
 import type { MetaFunction } from "@remix-run/node";
 
 import AndrewAnime from "../images/andrew-anime.png";
+import AndrewProfilePic from "../images/andrew-profile-pic.png";
+import CharlieProfilePic from "../images/charlie-profile-pic.jpeg";
 import HoratioAnime from "../images/horatio-anime.png";
+import HoratioProfilePic from "../images/horatio-profile-pic.jpg";
 import { BgwFooter } from "./components/BgwFooter";
 import { BgwHeader } from "./components/BgwHeader";
+import { HostProfile } from "./components/HostProfile";
 import { SocialLink } from "./components/SocialLink";
 import { useYoutubeVideo } from "./hooks/useYoutubeVideo";
 
@@ -137,7 +141,24 @@ export default function Index() {
             />
           </div>
 
-          <div>host profiles</div>
+          <div className="flex flex-col gap-10">
+            <HostProfile
+              image={HoratioProfilePic}
+              description="Horatio Gould is an amateur standup comedian and men's mental health advocate  attempting to become the millennial Ricky Gervais"
+              instagramLink="https://www.instagram.com/horatiogouldcomedy"
+              twitterLink="https://x.com/horatiothegould"
+            />
+            <HostProfile
+              image={AndrewProfilePic}
+              description="Andrew Kirwan is a failing financial crime Investigator and a comedy hobbyist with a passion for men's only saunas"
+              instagramLink="https://www.instagram.com/andrewkirwancomedy"
+              twitterLink="https://x.com/drew_kirwan?s=21"
+            />
+            <HostProfile
+              image={CharlieProfilePic}
+              description="Charlie is a producer, recovering porn addict and men's mental health leader focusing on incel recovery"
+            />
+          </div>
         </div>
       </main>
 
