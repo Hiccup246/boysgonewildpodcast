@@ -109,11 +109,11 @@ export default function Index() {
           <div className="relative w-full aspect-video">
             <img
               src={HoratioAnime}
-              className="absolute top-[-260px] left-0 h-[300px]"
+              className="absolute top-[-220px] left-0 h-[300px]"
             />
             <img
               src={AndrewAnime}
-              className="absolute top-[-260px] right-0 h-[300px]"
+              className="absolute top-[-220px] right-0 h-[300px]"
             />
 
             <iframe
