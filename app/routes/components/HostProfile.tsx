@@ -29,7 +29,7 @@ export const HostProfile = ({
       <div className="flex flex-col gap-2 justify-center text-2xl">
         <div>{description}</div>
 
-        <div className="flex flex-row">
+        <div className="flex flex-row gap-3">
           {instagramLink && (
             <a href={instagramLink}>
               <FaInstagram title="Instagram Icon" size="1.5em" />
