@@ -162,12 +162,14 @@ export default function Index() {
               description="Horatio Gould is an amateur standup comedian and men's mental health advocate  attempting to become the millennial Ricky Gervais"
               instagramLink="https://www.instagram.com/horatiogouldcomedy"
               twitterLink="https://x.com/horatiothegould"
+              linkedInLink="https://www.linkedin.com/in/horatio-gould-100b13174"
             />
             <HostProfile
               image={AndrewProfilePic}
               description="Andrew Kirwan is a failing financial crime Investigator and a comedy hobbyist with a passion for men's only saunas"
               instagramLink="https://www.instagram.com/andrewkirwancomedy"
               twitterLink="https://x.com/drew_kirwan?s=21"
+              linkedInLink="https://www.linkedin.com/in/andrew-kirwan-348b14195"
             />
             <HostProfile
               image={CharlieProfilePic}
