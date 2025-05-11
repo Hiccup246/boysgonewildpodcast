@@ -108,7 +108,7 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
-  const { player, loaded } = useYoutubeVideo(BGW_YT_VIDEO_ID, "bgw-player");
+  const { loaded } = useYoutubeVideo(BGW_YT_VIDEO_ID, "bgw-player");
 
   const bgwYtVideoUrl = `https://www.youtube.com/embed/${BGW_YT_VIDEO_ID}?enablejsapi=1`;
 
