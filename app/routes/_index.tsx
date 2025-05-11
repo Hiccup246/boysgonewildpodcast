@@ -30,7 +30,6 @@ export const meta: MetaFunction = () => {
       content:
         "Boys gone wild podcast, horatio gould, andrew kirwan, uk comedy podcast",
     },
-    { name: "robots", content: "noindex, follow" },
     {
       tagName: "link",
       rel: "canonical",
