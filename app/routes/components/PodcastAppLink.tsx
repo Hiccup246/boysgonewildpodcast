@@ -10,7 +10,12 @@ export const PodcastAppLink = ({
   link: string;
 }) => {
   return (
-    <a href={link} className="flex flex-row justify-between items-center">
+    <a
+      target="_blank"
+      href={link}
+      className="flex flex-row justify-between items-center"
+      rel="noreferrer"
+    >
       <div className="flex flex-row gap-4 items-center">
         {icon}
 
