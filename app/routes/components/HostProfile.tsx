@@ -22,6 +22,7 @@ export const HostProfile = ({
           width="150"
           height="150"
           src={image}
+          alt={description}
           className="w-full h-full object-fill"
         />
       </div>

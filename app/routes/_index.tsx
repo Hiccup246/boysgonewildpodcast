@@ -121,10 +121,12 @@ export default function Index() {
           <div className="relative w-full aspect-video">
             <img
               src={HoratioAnime}
+              alt="Anime version of Horatio Gould"
               className="absolute top-[-220px] left-0 h-[300px] z-2"
             />
             <img
               src={AndrewAnime}
+              alt="Anime version of Andrew Kirwan"
               className="absolute top-[-220px] right-0 h-[300px] z-1"
             />
 
