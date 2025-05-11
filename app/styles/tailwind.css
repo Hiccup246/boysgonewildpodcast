@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "Roboto Variable", sans-serif;
+  font-family: var(--font-mono);
 }
 
 dialog::backdrop {
