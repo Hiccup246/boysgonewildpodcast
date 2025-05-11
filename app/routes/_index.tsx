@@ -139,26 +139,32 @@ export default function Index() {
             <SocialLink
               icon={<FaYoutube title="Youtube Icon" size="1.5em" />}
               description="Subscribe on Youtube"
+              link="https://www.youtube.com/@boyzgonewild"
             />
             <SocialLink
               icon={<FaInstagram title="Instagram Icon" size="1.5em" />}
               description="Follow on Instagram"
+              link="https://www.instagram.com/boysgonewildpodcast"
             />
             <SocialLink
               icon={<FaPatreon title="Patreon Icon" size="1.5em" />}
               description="Become a Patron"
+              link="https://www.patreon.com/c/boysgonewild"
             />
             <SocialLink
               icon={<FaTiktok title="Tik Tok Icon" size="1.5em" />}
               description="Watch on Tik Tok"
+              link="https://www.tiktok.com/@boysgonewiild"
             />
             <SocialLink
               icon={<SlSocialSpotify title="Spotify Icon" size="1.5em" />}
               description="Listen on Spotify"
+              link="https://open.spotify.com/show/37F1hM1i53hxNOIjSXmMfc"
             />
             <SocialLink
               icon={<LuPodcast title="Podcast App Icon" size="1.5em" />}
               description="Listen on your podcast app"
+              link=""
             />
           </div>
 
