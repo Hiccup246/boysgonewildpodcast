@@ -1,4 +1,10 @@
 import type { MetaFunction } from "@remix-run/node";
+import { FaYoutube } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaPatreon } from "react-icons/fa6";
+import { FaTiktok } from "react-icons/fa6";
+import { LuPodcast } from "react-icons/lu";
+import { SlSocialSpotify } from "react-icons/sl";
 
 import AndrewAnime from "../images/andrew-anime.png";
 import AndrewProfilePic from "../images/andrew-profile-pic.png";
@@ -130,13 +136,22 @@ export default function Index() {
           </div>
 
           <div className="flex flex-row flex-wrap gap-5g">
-            <SocialLink icon="youtube" description="Subscribe on Youtube" />
-            <SocialLink icon="instagram" description="Follow on Instagram" />
-            <SocialLink icon="patreon" description="Become a Patron" />
-            <SocialLink icon="tok-tok" description="Watch on Tik Tok" />
-            <SocialLink icon="spotify" description="Listen on Spotify" />
             <SocialLink
-              icon="podcast"
+              icon={<FaYoutube />}
+              description="Subscribe on Youtube"
+            />
+            <SocialLink
+              icon={<FaInstagram />}
+              description="Follow on Instagram"
+            />
+            <SocialLink icon={<FaPatreon />} description="Become a Patron" />
+            <SocialLink icon={<FaTiktok />} description="Watch on Tik Tok" />
+            <SocialLink
+              icon={<SlSocialSpotify />}
+              description="Listen on Spotify"
+            />
+            <SocialLink
+              icon={<LuPodcast />}
               description="Listen on your podcast app"
             />
           </div>

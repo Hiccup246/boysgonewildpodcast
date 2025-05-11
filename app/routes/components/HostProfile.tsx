@@ -1,3 +1,6 @@
+import { FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
 export const HostProfile = ({
   image,
   description,
@@ -24,8 +27,16 @@ export const HostProfile = ({
         <div>{description}</div>
 
         <div className="flex flex-row">
-          {instagramLink && <a href={instagramLink}>Instagram Link</a>}
-          {twitterLink && <a href={twitterLink}>Twitter Link</a>}
+          {instagramLink && (
+            <a href={instagramLink}>
+              <FaInstagram />
+            </a>
+          )}
+          {twitterLink && (
+            <a href={twitterLink}>
+              <FaXTwitter />
+            </a>
+          )}
         </div>
       </div>
     </div>

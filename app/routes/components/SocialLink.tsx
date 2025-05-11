@@ -2,7 +2,7 @@ export const SocialLink = ({
   icon,
   description,
 }: {
-  icon: string;
+  icon: React.ReactNode;
   description: string;
 }) => {
   return (
