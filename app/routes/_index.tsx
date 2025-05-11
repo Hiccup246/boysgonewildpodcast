@@ -115,7 +115,7 @@ export default function Index() {
       <BgwHeader />
 
       <main className="flex items-center justify-center">
-        <div className="flex flex-col items-center gap-16 w-7/12 pt-[250px]">
+        <div className="flex flex-col items-center w-7/12 pt-[250px]">
           {/* pb-[56.25%] h-0 can use to force 16/9 */}
           <div className="relative w-full aspect-video">
             <img
@@ -135,7 +135,7 @@ export default function Index() {
             ></iframe>
           </div>
 
-          <div className="flex flex-row flex-wrap gap-5">
+          <div className="flex flex-row flex-wrap gap-5 pt-5">
             <SocialLink
               icon={<FaYoutube title="Youtube Icon" size="1.5em" />}
               description="Subscribe on Youtube"
@@ -168,7 +168,7 @@ export default function Index() {
             />
           </div>
 
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-18 py-36">
             <HostProfile
               image={HoratioProfilePic}
               description="Horatio Gould is an amateur standup comedian and men's mental health advocate  attempting to become the millennial Ricky Gervais"
