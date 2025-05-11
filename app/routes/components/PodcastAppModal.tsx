@@ -36,6 +36,7 @@ export const PodcastAppModal = ({ trigger }: { trigger: React.ReactNode }) => {
       <dialog
         ref={dialogRef}
         className="border-2 rounded-lg border-bgw-neon-blue p-5 my-auto mx-auto bg-bgw-purple"
+        // eslint-disable-next-line react/no-unknown-property
         closedby="any"
       >
         <button
