@@ -16,6 +16,7 @@ import { BgwHeader } from "./components/BgwHeader";
 import { HostProfile } from "./components/HostProfile";
 import { PodcastAppModal } from "./components/PodcastAppModal";
 import { SocialLink } from "./components/SocialLink";
+import { VideoSkeleton } from "./components/VideoSkeleton";
 import { useYoutubeVideo } from "./hooks/useYoutubeVideo";
 
 const BGW_YT_VIDEO_ID = "k5ko_aVG6dM";
@@ -107,7 +108,7 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
-  const _player = useYoutubeVideo(BGW_YT_VIDEO_ID, "bgw-player");
+  const { player, loaded } = useYoutubeVideo(BGW_YT_VIDEO_ID, "bgw-player");
 
   const bgwYtVideoUrl = `https://www.youtube.com/embed/${BGW_YT_VIDEO_ID}?enablejsapi=1`;
 
@@ -136,6 +137,12 @@ export default function Index() {
               className="absolute top-0 left-0 w-full h-full rounded-2xl z-3"
               allow="fullscreen"
             ></iframe>
+
+            {!loaded && (
+              <div className="absolute top-0 left-0 w-full h-full rounded-2xl z-3 bg-grey">
+                <VideoSkeleton />
+              </div>
+            )}
           </div>
 
           <div className="flex flex-row flex-wrap gap-5 pt-5 justify-center sm:justify-start">

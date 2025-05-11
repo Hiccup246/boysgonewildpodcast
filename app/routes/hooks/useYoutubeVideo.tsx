@@ -3,8 +3,13 @@ import { useEffect, useState } from "react";
 export const useYoutubeVideo = (
   videoId: string,
   elementId: string,
-): { player: YT.Player | null } => {
+): { player: YT.Player | null; loaded: boolean } => {
   const [player, setPlayer] = useState<null | YT.Player>(null);
+  const [loaded, setLoaded] = useState(false);
+
+  const playerHasLoaded = (_event: YT.PlayerEvent) => {
+    setLoaded(true);
+  };
 
   useEffect(() => {
     const tag = document.createElement("script");
@@ -20,10 +25,13 @@ export const useYoutubeVideo = (
           playerVars: {
             playsinline: 1,
           },
+          events: {
+            onReady: playerHasLoaded,
+          },
         }),
       );
     };
   }, []);
 
-  return { player };
+  return { player, loaded };
 };
