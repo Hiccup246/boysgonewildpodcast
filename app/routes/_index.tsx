@@ -39,31 +39,31 @@ export const meta: MetaFunction = () => {
 
     // Twitter
     {
-      property: "twitter:card",
+      name: "twitter:card",
       content: "summary_large_image",
     },
     {
-      property: "twitter:site",
+      name: "twitter:site",
       content: "@horatiothegould",
     },
     {
-      property: "twitter:creator",
+      name: "twitter:creator",
       content: "@jameswattnz",
     },
     {
-      property: "twitter:title",
+      name: "twitter:title",
       content: "Boys Gone Wild Podcast",
     },
     {
-      property: "twitter:description",
+      name: "twitter:description",
       content: "Boys gone wild podcast fan site",
     },
     {
-      property: "twitter:image",
+      name: "twitter:image",
       content: "",
     },
     {
-      property: "twitter:image:alt",
+      name: "twitter:image:alt",
       content: "Screen shot of boysgonewildpodcast.com",
     },
 
