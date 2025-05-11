@@ -11,3 +11,8 @@
 body {
   font-family: "Roboto Variable", sans-serif;
 }
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+}

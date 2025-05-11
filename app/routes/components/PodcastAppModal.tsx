@@ -38,7 +38,7 @@ export const PodcastAppModal = ({ trigger }: { trigger: React.ReactNode }) => {
       <dialog
         ref={dialogRef}
         onClose={closeModal}
-        className="border-2 rounded-lg border-bgw-neon-blue p-5 my-auto mx-auto bg-bgw-purple"
+        className="rounded-lg p-5 my-auto mx-auto bg-bgw-pink"
         // eslint-disable-next-line react/no-unknown-property
         closedby="any"
       >
@@ -56,7 +56,7 @@ export const PodcastAppModal = ({ trigger }: { trigger: React.ReactNode }) => {
             podcast apps
           </p>
 
-          <div className="border-2 rounded-lg border-bgw-neon-blue p-3 flex flex-col gap-4">
+          <div className="border-2 rounded-lg border-bgw-purple p-3 flex flex-col gap-4">
             <PodcastAppLink
               icon={<SiApplepodcasts title="Apple Podcasts" size="2em" />}
               name="Apple Podcasts"
