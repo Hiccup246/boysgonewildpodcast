@@ -131,7 +131,7 @@ export default function Index() {
             <iframe
               id="bgw-player"
               src={bgwYtVideoUrl}
-              className="absolute top-0 left-0 w-full h-full"
+              className="absolute top-0 left-0 w-full h-full rounded-2xl"
               allow="fullscreen"
             ></iframe>
           </div>
