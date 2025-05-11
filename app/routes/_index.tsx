@@ -121,17 +121,17 @@ export default function Index() {
           <div className="relative w-full aspect-video">
             <img
               src={HoratioAnime}
-              className="absolute top-[-220px] left-0 h-[300px]"
+              className="absolute top-[-220px] left-0 h-[300px] z-2"
             />
             <img
               src={AndrewAnime}
-              className="absolute top-[-220px] right-0 h-[300px]"
+              className="absolute top-[-220px] right-0 h-[300px] z-1"
             />
 
             <iframe
               id="bgw-player"
               src={bgwYtVideoUrl}
-              className="absolute top-0 left-0 w-full h-full rounded-2xl"
+              className="absolute top-0 left-0 w-full h-full rounded-2xl z-3"
               allow="fullscreen"
             ></iframe>
           </div>
