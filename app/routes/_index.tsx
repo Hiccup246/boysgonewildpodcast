@@ -185,6 +185,15 @@ export default function Index() {
           </div>
 
           <div className="flex flex-col gap-18 py-36">
+            <p className="text-xl">
+              <i>Boys Gone Wild</i> is a comedy podcast based in the United
+              Kindom and filmed in east London. The podcast features{" "}
+              <u>Horatio Gould</u> and <u>Andrew Kirwan</u> as the hosts along
+              with an odd man called Charlie who produces the podcast. The
+              podcast features cutting edge takes on current events, life, poo,
+              masterbation and commentary on local foxes.
+            </p>
+
             <HostProfile
               image={HoratioProfilePic}
               description="Horatio Gould is an amateur standup comedian and men's mental health advocate  attempting to become the millennial Ricky Gervais"

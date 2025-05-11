@@ -27,7 +27,7 @@ export const HostProfile = ({
         />
       </div>
 
-      <div className="flex flex-col gap-2 justify-center text-2xl">
+      <div className="flex flex-col gap-2 justify-center text-xl">
         <div>{description}</div>
 
         <div className="flex flex-row gap-3 justify-center sm:justify-start">

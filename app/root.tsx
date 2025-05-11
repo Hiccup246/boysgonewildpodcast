@@ -38,7 +38,7 @@ export const links: LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const data = useLoaderData<typeof loader>();
- 
+
   return (
     <html lang="en">
       <head>
