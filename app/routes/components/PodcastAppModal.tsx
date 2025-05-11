@@ -44,7 +44,7 @@ export const PodcastAppModal = ({ trigger }: { trigger: React.ReactNode }) => {
       >
         <button
           onClick={closeModal}
-          className="absolute right-2 top-2 cursor-pointer"
+          className="absolute right-2 top-2 cursor-pointer hover:bg-grey/30 rounded-full border-0 p-1"
         >
           <RxCross2 size="1.5em" />
         </button>
