@@ -31,12 +31,18 @@ export const HostProfile = ({
 
         <div className="flex flex-row gap-3 justify-center sm:justify-start">
           {instagramLink && (
-            <a href={instagramLink}>
+            <a
+              href={instagramLink}
+              className="duration-200 ease-in hover:-translate-y-1 hover:opacity-45"
+            >
               <FaInstagram title="Instagram Icon" size="1.5em" />
             </a>
           )}
           {twitterLink && (
-            <a href={twitterLink}>
+            <a
+              href={twitterLink}
+              className="duration-200 ease-in hover:-translate-y-1 hover:opacity-45"
+            >
               <FaXTwitter
                 title="X.com Icon (Previously Twitter)"
                 size="1.5em"
@@ -44,8 +50,15 @@ export const HostProfile = ({
             </a>
           )}
           {linkedInLink && (
-            <a href={linkedInLink}>
-              <FaLinkedinIn title="LinkedIn Icon" size="1.5em" />
+            <a
+              href={linkedInLink}
+              className="duration-200 ease-in hover:-translate-y-1 hover:opacity-45"
+            >
+              <FaLinkedinIn
+                title="LinkedIn Icon"
+                size="1.5em"
+                color="inherit"
+              />
             </a>
           )}
         </div>
