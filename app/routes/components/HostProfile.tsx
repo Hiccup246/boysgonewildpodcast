@@ -17,10 +17,10 @@ export const HostProfile = ({
 }) => {
   return (
     <div className="flex flex-row gap-5 w-full">
-      <div className="min-w-[250px] min-h-[250px] max-w-[250px] max-h-[250px] border-2 border-bgw-neon-blue rounded-full overflow-hidden">
+      <div className="min-w-[150px] min-h-[150px] max-w-[150px] max-h-[150px] border-2 border-bgw-neon-blue rounded-full overflow-hidden">
         <img
-          width="250"
-          height="250"
+          width="150"
+          height="150"
           src={image}
           className="w-full h-full object-fill"
         />
