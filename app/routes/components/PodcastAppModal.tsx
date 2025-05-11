@@ -16,15 +16,17 @@ export const PodcastAppModal = ({ trigger }: { trigger: React.ReactNode }) => {
   const openModal = () => {
     if (dialogRef?.current) {
       dialogRef.current.showModal();
-      document?.body.classList.add("overflow-hidden");
     }
+
+    document?.body.classList.add("overflow-hidden");
   };
 
   const closeModal = () => {
     if (dialogRef?.current) {
       dialogRef.current.close();
-      document?.body.classList.remove("overflow-hidden");
     }
+
+    document?.body.classList.remove("overflow-hidden");
   };
 
   return (
@@ -35,6 +37,7 @@ export const PodcastAppModal = ({ trigger }: { trigger: React.ReactNode }) => {
 
       <dialog
         ref={dialogRef}
+        onClose={closeModal}
         className="border-2 rounded-lg border-bgw-neon-blue p-5 my-auto mx-auto bg-bgw-purple"
         // eslint-disable-next-line react/no-unknown-property
         closedby="any"
