@@ -11,7 +11,17 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useLoaderData,
 } from "@remix-run/react";
+
+export async function loader() {
+  return {
+    ENV: {
+      UMAMI_WEBSITE_URL: process.env.UMAMI_WEBSITE_URL,
+      UMAMI_WEBSITE_ID: process.env.UMAMI_WEBSITE_ID,
+    },
+  };
+}
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -27,6 +37,8 @@ export const links: LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  const data = useLoaderData<typeof loader>();
+
   return (
     <html lang="en">
       <head>
@@ -34,6 +46,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
+        <script
+          id="umami-analytics-script"
+          data-website-id={data.ENV.UMAMI_WEBSITE_ID}
+          src={data.ENV.UMAMI_WEBSITE_URL}
+          async
+        />
       </head>
       <body className="bg-bgw-pink">
         {children}
