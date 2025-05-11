@@ -32,17 +32,17 @@ export const HostProfile = ({
         <div className="flex flex-row">
           {instagramLink && (
             <a href={instagramLink}>
-              <FaInstagram />
+              <FaInstagram title="Instagram Icon" />
             </a>
           )}
           {twitterLink && (
             <a href={twitterLink}>
-              <FaXTwitter />
+              <FaXTwitter title="X.com Icon (Previously Twitter)" />
             </a>
           )}
           {linkedInLink && (
             <a href={linkedInLink}>
-              <CiLinkedin />
+              <CiLinkedin title="LinkedIn Icon" />
             </a>
           )}
         </div>
