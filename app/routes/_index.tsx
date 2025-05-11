@@ -135,7 +135,7 @@ export default function Index() {
             ></iframe>
           </div>
 
-          <div className="flex flex-row flex-wrap gap-5g">
+          <div className="flex flex-row flex-wrap gap-5">
             <SocialLink
               icon={<FaYoutube title="Youtube Icon" size="1.5em" />}
               description="Subscribe on Youtube"
