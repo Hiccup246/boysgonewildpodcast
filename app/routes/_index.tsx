@@ -14,6 +14,7 @@ import HoratioProfilePic from "../images/horatio-profile-pic.jpg";
 import { BgwFooter } from "./components/BgwFooter";
 import { BgwHeader } from "./components/BgwHeader";
 import { HostProfile } from "./components/HostProfile";
+import { PodcastAppModal } from "./components/PodcastAppModal";
 import { SocialLink } from "./components/SocialLink";
 import { useYoutubeVideo } from "./hooks/useYoutubeVideo";
 
@@ -161,10 +162,16 @@ export default function Index() {
               description="Listen on Spotify"
               link="https://open.spotify.com/show/37F1hM1i53hxNOIjSXmMfc"
             />
-            <SocialLink
-              icon={<LuPodcast title="Podcast App Icon" size="1.5em" />}
-              description="Listen on your podcast app"
-              link=""
+
+            <PodcastAppModal
+              trigger={
+                <div className="flex flex-row bg-bgw-purple border-bgw-neon-blue rounded-2xl border-2 py-2 px-4 gap-2">
+                  <div>
+                    <LuPodcast title="Podcast App Icon" size="1.5em" />
+                  </div>
+                  <div>Listen on your podcast app</div>
+                </div>
+              }
             />
           </div>
 
