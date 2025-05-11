@@ -33,7 +33,7 @@ export const HostProfile = ({
           {instagramLink && (
             <a
               href={instagramLink}
-              className="duration-200 ease-in hover:-translate-y-1 hover:opacity-45"
+              className="duration-200 ease-in hover:-translate-y-1 hover:opacity-60"
             >
               <FaInstagram title="Instagram Icon" size="1.5em" />
             </a>
@@ -41,7 +41,7 @@ export const HostProfile = ({
           {twitterLink && (
             <a
               href={twitterLink}
-              className="duration-200 ease-in hover:-translate-y-1 hover:opacity-45"
+              className="duration-200 ease-in hover:-translate-y-1 hover:opacity-60"
             >
               <FaXTwitter
                 title="X.com Icon (Previously Twitter)"
@@ -52,7 +52,7 @@ export const HostProfile = ({
           {linkedInLink && (
             <a
               href={linkedInLink}
-              className="duration-200 ease-in hover:-translate-y-1 hover:opacity-45"
+              className="duration-200 ease-in hover:-translate-y-1 hover:opacity-60"
             >
               <FaLinkedinIn
                 title="LinkedIn Icon"
