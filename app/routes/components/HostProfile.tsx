@@ -1,4 +1,4 @@
-import { CiLinkedin } from "react-icons/ci";
+import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -32,17 +32,20 @@ export const HostProfile = ({
         <div className="flex flex-row">
           {instagramLink && (
             <a href={instagramLink}>
-              <FaInstagram title="Instagram Icon" />
+              <FaInstagram title="Instagram Icon" size="1.5em" />
             </a>
           )}
           {twitterLink && (
             <a href={twitterLink}>
-              <FaXTwitter title="X.com Icon (Previously Twitter)" />
+              <FaXTwitter
+                title="X.com Icon (Previously Twitter)"
+                size="1.5em"
+              />
             </a>
           )}
           {linkedInLink && (
             <a href={linkedInLink}>
-              <CiLinkedin title="LinkedIn Icon" />
+              <FaLinkedinIn title="LinkedIn Icon" size="1.5em" />
             </a>
           )}
         </div>

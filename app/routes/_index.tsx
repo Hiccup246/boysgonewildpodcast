@@ -137,27 +137,27 @@ export default function Index() {
 
           <div className="flex flex-row flex-wrap gap-5g">
             <SocialLink
-              icon={<FaYoutube title="Youtube Icon" />}
+              icon={<FaYoutube title="Youtube Icon" size="2em" />}
               description="Subscribe on Youtube"
             />
             <SocialLink
-              icon={<FaInstagram title="Instagram Icon" />}
+              icon={<FaInstagram title="Instagram Icon" size="2em" />}
               description="Follow on Instagram"
             />
             <SocialLink
-              icon={<FaPatreon title="Patreon Icon" />}
+              icon={<FaPatreon title="Patreon Icon" size="2em" />}
               description="Become a Patron"
             />
             <SocialLink
-              icon={<FaTiktok title="Tik Tok Icon" />}
+              icon={<FaTiktok title="Tik Tok Icon" size="2em" />}
               description="Watch on Tik Tok"
             />
             <SocialLink
-              icon={<SlSocialSpotify title="Spotify Icon" />}
+              icon={<SlSocialSpotify title="Spotify Icon" size="2em" />}
               description="Listen on Spotify"
             />
             <SocialLink
-              icon={<LuPodcast title="Podcast App Icon" />}
+              icon={<LuPodcast title="Podcast App Icon" size="2em" />}
               description="Listen on your podcast app"
             />
           </div>
