@@ -60,7 +60,7 @@ export const meta: MetaFunction = () => {
     },
     {
       name: "twitter:image",
-      content: "",
+      content: "https://www.boysgonewildpodcast.com/site-screenshot.webp",
     },
     {
       name: "twitter:image:alt",
@@ -86,15 +86,15 @@ export const meta: MetaFunction = () => {
     },
     {
       property: "og:image",
-      content: "",
+      content: "https://www.boysgonewildpodcast.com/site-screenshot.webp",
     },
     {
       property: "og:image:width",
-      content: "",
+      content: "3024",
     },
     {
       property: "og:image:height",
-      content: "",
+      content: "1642",
     },
     {
       property: "og:image:alt",
