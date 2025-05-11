@@ -183,7 +183,7 @@ export default function Index() {
             />
           </div>
 
-          <div className="flex flex-col gap-18 py-36">
+          <div className="flex flex-col gap-18 py-36 text-center sm:text-start">
             <p className="text-xl">
               <i>Boys Gone Wild</i> is a comedy podcast based in the United
               Kindom and filmed in east London. The podcast features{" "}
