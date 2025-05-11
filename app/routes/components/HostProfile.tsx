@@ -17,7 +17,7 @@ export const HostProfile = ({
 }) => {
   return (
     <div className="flex flex-row gap-5 w-full flex-wrap sm:flex-nowrap text-center sm:text-left justify-center sm:justify-start">
-      <div className="min-w-[150px] min-h-[150px] max-w-[150px] max-h-[150px] border-2 border-bgw-neon-blue rounded-full overflow-hidden">
+      <div className="min-w-[150px] min-h-[150px] max-w-[150px] max-h-[150px] border-2 border-bgw-neon-blue rounded-full overflow-hidden shadow-sm shadow-bgw-neon-blue">
         <img
           width="150"
           height="150"
