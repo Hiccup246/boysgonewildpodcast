@@ -14,13 +14,17 @@ export const PodcastAppModal = ({ trigger }: { trigger: React.ReactNode }) => {
   const dialogRef = useRef<null | HTMLDialogElement>(null);
 
   const openModal = () => {
-    dialogRef && dialogRef.current && dialogRef.current.showModal();
-    document && document.body.classList.add("overflow-hidden");
+    if (dialogRef?.current) {
+      dialogRef.current.showModal();
+      document?.body.classList.add("overflow-hidden");
+    }
   };
 
   const closeModal = () => {
-    dialogRef && dialogRef.current && dialogRef.current.close();
-    document && document.body.classList.remove("overflow-hidden");
+    if (dialogRef?.current) {
+      dialogRef.current.close();
+      document?.body.classList.remove("overflow-hidden");
+    }
   };
 
   return (
