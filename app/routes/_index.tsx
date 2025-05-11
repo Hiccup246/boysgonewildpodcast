@@ -6,11 +6,11 @@ import { FaTiktok } from "react-icons/fa6";
 import { LuPodcast } from "react-icons/lu";
 import { SlSocialSpotify } from "react-icons/sl";
 
-import AndrewAnime from "../images/andrew-anime.png";
-import AndrewProfilePic from "../images/andrew-profile-pic.png";
-import CharlieProfilePic from "../images/charlie-profile-pic.jpeg";
-import HoratioAnime from "../images/horatio-anime.png";
-import HoratioProfilePic from "../images/horatio-profile-pic.jpg";
+import AndrewAnime from "../images/andrew-anime.webp";
+import AndrewProfilePic from "../images/andrew-profile-pic.webp";
+import CharlieProfilePic from "../images/charlie-profile-pic.webp";
+import HoratioAnime from "../images/horatio-anime.webp";
+import HoratioProfilePic from "../images/horatio-profile-pic.webp";
 import { BgwFooter } from "./components/BgwFooter";
 import { BgwHeader } from "./components/BgwHeader";
 import { HostProfile } from "./components/HostProfile";

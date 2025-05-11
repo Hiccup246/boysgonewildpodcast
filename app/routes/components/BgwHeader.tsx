@@ -1,4 +1,4 @@
-import BoysGoneWildLogo from "../../images/bgw-header.png";
+import BoysGoneWildLogo from "../../images/bgw-header.webp";
 
 export const BgwHeader = () => {
   return (
