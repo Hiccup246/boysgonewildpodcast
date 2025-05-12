@@ -6,6 +6,15 @@
   This is a fan website dedicated to the boys gone wild podcast. The site is built using <a href="https://remix.run/">Remix</a>, styled with <a href="https://tailwindcss.com/">Tailwind</a> and utilises icons from <a href="https://fontawesome.com/">Font Awesome</a>, <a href="https://lucide.dev/">Lucide</a> and <a href="https://simplelineicons.github.io/">Simple Line Icons</a>.
 </p>
 
+<div>
+
+![](https://img.shields.io/github/license/Hiccup246/boysgonewildpodcast)
+![](https://img.shields.io/github/languages/code-size/Hiccup246/boysgonewildpodcast)
+![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=boysgonewildpodcast)
+![](https://img.shields.io/github/actions/workflow/status/hiccup246/boysgonewildpodcast/style-check.yml?branch=main&label=Style%20Check)
+
+</div>
+
 ## Description
 
 The projects source lives with the `app` directory and can be understood as:
