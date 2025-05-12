@@ -1,40 +1,28 @@
-# Welcome to Remix!
+# [boysgonewild.com](https://www.boysgonewildpodcast.com/)
 
-- 📖 [Remix docs](https://remix.run/docs)
+![site-screenshot](https://raw.githubusercontent.com/Hiccup246/boysgonewildpodcast/main/public/site-screenshot.webp)
 
-## Development
+<p>
+  This is a fan website dedicated to the boys gone wild podcast. The site is built using <a href="https://remix.run/">Remix</a>, styled with <a href="https://tailwindcss.com/">Tailwind</a> and utilises icons from <a href="https://fontawesome.com/">Font Awesome</a>, <a href="https://lucide.dev/">Lucide</a> and <a href="https://simplelineicons.github.io/">Simple Line Icons</a>.
+</p>
 
-Run the dev server:
+## Description
 
-```shellscript
-npm run dev
-```
+The projects source lives with the `app` directory and can be understood as:
+
+- `images` - All website images in `.webp`
+- `routes` - Holds the single index page
+  - `components` - Components for the index route
+  - `hooks` - Hooks for the index route
+  - `_index.tsx` - The index page with SEO
+- `styles` - Holds tailwind css and reset css
+- `typings` - Holds custom types
+- `root.tsx` - Root layout component + analytics scripts
 
 ## Deployment
 
-First, build your app for production:
+Steps to begin development:
 
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+1. Close this repo
+2. Run `pnpm install`
+3. Run `pnpm run dev`
