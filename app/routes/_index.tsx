@@ -1,25 +1,10 @@
 import type { MetaFunction } from "@remix-run/node";
-import { FaYoutube } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaPatreon } from "react-icons/fa6";
-import { FaTiktok } from "react-icons/fa6";
-import { LuPodcast } from "react-icons/lu";
-import { SlSocialSpotify } from "react-icons/sl";
 
-import AndrewAnime from "../images/andrew-anime.webp";
-import AndrewProfilePic from "../images/andrew-profile-pic.webp";
-import CharlieProfilePic from "../images/charlie-profile-pic.webp";
-import HoratioAnime from "../images/horatio-anime.webp";
-import HoratioProfilePic from "../images/horatio-profile-pic.webp";
 import { BgwFooter } from "./components/BgwFooter";
 import { BgwHeader } from "./components/BgwHeader";
-import { HostProfile } from "./components/HostProfile";
-import { PodcastAppModal } from "./components/PodcastAppModal";
-import { SocialLink } from "./components/SocialLink";
-import { VideoSkeleton } from "./components/VideoSkeleton";
-import { useYoutubeVideo } from "./hooks/useYoutubeVideo";
-
-const BGW_YT_VIDEO_ID = "k5ko_aVG6dM";
+import { BgwPodcastDescription } from "./components/BgwPodcastDescription";
+import { BgwSocialLinks } from "./components/BgwSocialLinks";
+import { BgwYoutubePreview } from "./components/BgwYoutubePreview";
 
 export const meta: MetaFunction = () => {
   return [
@@ -106,112 +91,20 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+const BGW_YT_VIDEO_ID = "k5ko_aVG6dM";
+
 export default function Index() {
-  const { loaded } = useYoutubeVideo(BGW_YT_VIDEO_ID, "bgw-player");
-
-  const bgwYtVideoUrl = `https://www.youtube.com/embed/${BGW_YT_VIDEO_ID}?enablejsapi=1`;
-
   return (
     <>
       <BgwHeader />
 
       <main className="flex items-center justify-center">
         <div className="flex flex-col items-center w-11/12 md:w-9/12 lg:w-7/12 pt-[250px]">
-          {/* pb-[56.25%] h-0 can use to force 16/9 */}
-          <div className="relative w-full aspect-video">
-            <img
-              src={HoratioAnime}
-              alt="Anime version of Horatio Gould"
-              className="absolute top-[-220px] left-0 h-[300px] z-2"
-            />
-            <img
-              src={AndrewAnime}
-              alt="Anime version of Andrew Kirwan"
-              className="absolute top-[-220px] right-0 h-[300px] z-1"
-            />
+          <BgwYoutubePreview bgwYtVideoId={BGW_YT_VIDEO_ID} />
 
-            <iframe
-              id="bgw-player"
-              src={bgwYtVideoUrl}
-              className="absolute top-0 left-0 w-full h-full rounded-2xl z-3"
-              allow="fullscreen"
-            ></iframe>
+          <BgwSocialLinks />
 
-            {!loaded && (
-              <div className="absolute top-0 left-0 w-full h-full rounded-2xl z-3 bg-grey">
-                <VideoSkeleton />
-              </div>
-            )}
-          </div>
-
-          <div className="flex flex-row flex-wrap gap-5 pt-5 justify-center sm:justify-start">
-            <SocialLink
-              icon={<FaYoutube title="Youtube Icon" size="1.5em" />}
-              description="Subscribe on Youtube"
-              link="https://www.youtube.com/@boyzgonewild"
-            />
-            <SocialLink
-              icon={<FaInstagram title="Instagram Icon" size="1.5em" />}
-              description="Follow on Instagram"
-              link="https://www.instagram.com/boysgonewildpodcast"
-            />
-            <SocialLink
-              icon={<FaPatreon title="Patreon Icon" size="1.5em" />}
-              description="Become a Patron"
-              link="https://www.patreon.com/c/boysgonewild"
-            />
-            <SocialLink
-              icon={<FaTiktok title="Tik Tok Icon" size="1.5em" />}
-              description="Watch on Tik Tok"
-              link="https://www.tiktok.com/@boysgonewiild"
-            />
-            <SocialLink
-              icon={<SlSocialSpotify title="Spotify Icon" size="1.5em" />}
-              description="Listen on Spotify"
-              link="https://open.spotify.com/show/37F1hM1i53hxNOIjSXmMfc"
-            />
-
-            <PodcastAppModal
-              trigger={
-                <div className="flex flex-row bg-bgw-purple border-bgw-neon-blue rounded-2xl border-2 py-2 px-4 gap-2 transition-transform duration-150 hover:-translate-y-1 hover:shadow-md">
-                  <div>
-                    <LuPodcast title="Podcast App Icon" size="1.5em" />
-                  </div>
-                  <div>Listen on podcast app</div>
-                </div>
-              }
-            />
-          </div>
-
-          <div className="flex flex-col gap-18 py-36 text-center sm:text-start">
-            <p className="text-xl">
-              <i>Boys Gone Wild</i> is a comedy podcast based in the United
-              Kindom and filmed in east London. The podcast features{" "}
-              <u>Horatio Gould</u> and <u>Andrew Kirwan</u> as the hosts along
-              with an odd man called Charlie who produces the podcast. The
-              podcast features cutting edge takes on current events, life, poo,
-              masterbation and commentary on local foxes.
-            </p>
-
-            <HostProfile
-              image={HoratioProfilePic}
-              description="Horatio Gould is an amateur standup comedian and men's mental health advocate  attempting to become the millennial Ricky Gervais"
-              instagramLink="https://www.instagram.com/horatiogouldcomedy"
-              twitterLink="https://x.com/horatiothegould"
-              linkedInLink="https://www.linkedin.com/in/horatio-gould-100b13174"
-            />
-            <HostProfile
-              image={AndrewProfilePic}
-              description="Andrew Kirwan is a failing financial crime Investigator and a comedy hobbyist with a passion for men's only saunas"
-              instagramLink="https://www.instagram.com/andrewkirwancomedy"
-              twitterLink="https://x.com/drew_kirwan?s=21"
-              linkedInLink="https://www.linkedin.com/in/andrew-kirwan-348b14195"
-            />
-            <HostProfile
-              image={CharlieProfilePic}
-              description="Charlie is a producer, recovering porn addict and men's mental health leader focusing on incel recovery"
-            />
-          </div>
+          <BgwPodcastDescription />
         </div>
       </main>
 
