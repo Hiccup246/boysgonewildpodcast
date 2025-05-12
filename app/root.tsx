@@ -1,7 +1,6 @@
 import "@fontsource/shrikhand";
 // Supports weights 100-900
 import "@fontsource-variable/roboto";
-import "./styles/reset.css";
 import "./styles/tailwind.css";
 
 import type { LinksFunction } from "@remix-run/node";
