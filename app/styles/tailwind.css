@@ -17,3 +17,17 @@ dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(2px);
 }
+
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 15px 2px var(--color-bgw-neon-blue);
+  }
+  50% {
+    box-shadow: 0 0 30px 3px var(--color-bgw-neon-blue);
+  }
+}
+
+.glow-animate {
+  animation: glow 2s ease-in-out infinite;
+}

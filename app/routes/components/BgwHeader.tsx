@@ -7,7 +7,7 @@ export const BgwHeader = () => {
         <img
           src={BoysGoneWildLogo}
           alt="boys gone wild logo"
-          className="shadow-bgw-neon-blue shadow-2xl/70 sm:rounded-2xl"
+          className="sm:rounded-2xl glow-animate"
         />
       </h1>
     </header>
