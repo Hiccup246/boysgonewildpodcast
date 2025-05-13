@@ -31,6 +31,9 @@ importers:
       isbot:
         specifier: ^4.1.0
         version: 4.4.0
+      james-watt-calling-card:
+        specifier: ^2.0.4
+        version: 2.0.4
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -4225,6 +4228,12 @@ packages:
     resolution:
       {
         integrity: sha512-OGlZQpz2yfahA/Rd1Y8Cd9SIEsqvXkLVoSw/cgwhnhFMDbsQFeZYoJJ7bIZBS9BcamUW96asq/npPWugM+RQBw==,
+      }
+
+  james-watt-calling-card@2.0.4:
+    resolution:
+      {
+        integrity: sha512-6XsUEl7pVLyHPe86tzHE0AaygH4a+N66b/R8vpG92pdhgBMO106vKTMo95+w6n1ndGYH6F9nB2AeS/f4LCqRIQ==,
       }
 
   javascript-stringify@2.1.0:
@@ -9732,6 +9741,8 @@ snapshots:
       "@isaacs/cliui": 8.0.2
     optionalDependencies:
       "@pkgjs/parseargs": 0.11.0
+
+  james-watt-calling-card@2.0.4: {}
 
   javascript-stringify@2.1.0: {}
 

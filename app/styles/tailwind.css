@@ -31,3 +31,7 @@ dialog::backdrop {
 .glow-animate {
   animation: glow 2s ease-in-out infinite;
 }
+
+james-watt-calling-card:hover {
+  text-decoration: underline;
+}
