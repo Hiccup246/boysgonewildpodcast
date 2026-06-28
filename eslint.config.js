@@ -35,4 +35,11 @@ export default [
   },
   eslintConfigPrettier,
   globalIgnores(["node_modules", "build"]),
+  {
+    settings: {
+      react: {
+        version: "detect",
+      },
+    },
+  },
 ];
