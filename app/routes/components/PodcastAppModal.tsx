@@ -39,7 +39,6 @@ export const PodcastAppModal = ({ trigger }: { trigger: React.ReactNode }) => {
         ref={dialogRef}
         onClose={closeModal}
         className="rounded-lg p-5 my-auto mx-auto bg-bgw-pink"
-        // eslint-disable-next-line react/no-unknown-property
         closedby="any"
       >
         <button
