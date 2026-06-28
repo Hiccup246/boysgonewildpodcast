@@ -14,3 +14,6 @@ declare namespace JSX {
     "james-watt-calling-card": any;
   }
 }
+
+declare module "@fontsource/*";
+declare module "@fontsource-variable/*";
