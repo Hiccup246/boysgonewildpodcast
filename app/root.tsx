@@ -10,10 +10,17 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-  useLoaderData,
+  useRouteLoaderData,
 } from "@remix-run/react";
 
-export async function loader() {
+type RootLoaderData = {
+  ENV: {
+    UMAMI_WEBSITE_URL?: string;
+    UMAMI_WEBSITE_ID?: string;
+  };
+};
+
+export async function loader(): Promise<RootLoaderData> {
   return {
     ENV: {
       UMAMI_WEBSITE_URL: process.env.UMAMI_WEBSITE_URL,
@@ -36,7 +43,7 @@ export const links: LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
-  const data = useLoaderData<typeof loader>();
+  const data = useRouteLoaderData<typeof loader>("root");
 
   return (
     <html lang="en">
@@ -47,8 +54,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
         <script
           id="umami-analytics-script"
-          data-website-id={data.ENV.UMAMI_WEBSITE_ID}
-          src={data.ENV.UMAMI_WEBSITE_URL}
+          data-website-id={data?.ENV.UMAMI_WEBSITE_ID}
+          src={data?.ENV.UMAMI_WEBSITE_URL}
           async
         />
       </head>
