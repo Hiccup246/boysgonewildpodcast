@@ -181,4 +181,7 @@ dist
 /api/index.js.map
 build
 
+# React Router typegen
+.react-router
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,node,remix+vercel

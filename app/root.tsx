@@ -3,7 +3,7 @@ import "@fontsource/shrikhand";
 import "@fontsource-variable/roboto";
 import "./styles/tailwind.css";
 
-import type { LinksFunction } from "@remix-run/node";
+import type { LinksFunction } from "react-router";
 import {
   Links,
   Meta,
@@ -11,7 +11,7 @@ import {
   Scripts,
   ScrollRestoration,
   useRouteLoaderData,
-} from "@remix-run/react";
+} from "react-router";
 
 type RootLoaderData = {
   ENV: {
