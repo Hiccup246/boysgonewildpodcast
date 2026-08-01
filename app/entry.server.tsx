@@ -48,10 +48,7 @@ function handleBotRequest(
   return new Promise((resolve, reject) => {
     let shellRendered = false;
     const { pipe, abort } = renderToPipeableStream(
-      <ServerRouter
-        context={remixContext}
-        url={request.url}
-      />,
+      <ServerRouter context={remixContext} url={request.url} />,
       {
         onAllReady() {
           shellRendered = true;
@@ -97,10 +94,7 @@ function handleBrowserRequest(
   return new Promise((resolve, reject) => {
     let shellRendered = false;
     const { pipe, abort } = renderToPipeableStream(
-      <ServerRouter
-        context={remixContext}
-        url={request.url}
-      />,
+      <ServerRouter context={remixContext} url={request.url} />,
       {
         onShellReady() {
           shellRendered = true;
